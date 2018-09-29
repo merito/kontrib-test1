@@ -4,3 +4,18 @@ hosting = github
 develop-branch = develop
 upstream = git@github.com:merito/kontrib-test1.git
 rebase = true
+
+[rule_lib]
+path = lib
+branch_name = lib-
+title = Library
+description = It is a library
+subrules = module
+
+[rule_test]
+path = test
+title = Test
+description = It is a test
+
+[subrule_module]
+path = lib/module
